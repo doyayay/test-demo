@@ -1,0 +1,76 @@
+{
+  "users": [
+    {
+      "id": "user_001",
+      "name": "김민준",
+      "email": "minjun.kim@example.com",
+      "created_at": "2024-11-01T09:00:00Z",
+      "status": "active",
+      "preferences": {
+        "language": "ko",
+        "timezone": "Asia/Seoul",
+        "notifications": true
+      }
+    },
+    {
+      "id": "user_002",
+      "name": "이서연",
+      "email": "seoyeon.lee@example.com",
+      "created_at": "2024-11-15T11:30:00Z",
+      "status": "active",
+      "preferences": {
+        "language": "ko",
+        "timezone": "Asia/Seoul",
+        "notifications": false
+      }
+    }
+  ],
+  "products": [
+    {
+      "id": "prod_001",
+      "name": "스마트폰 충전기",
+      "price": 25000,
+      "category": "전자기기",
+      "stock": 100,
+      "specs": {
+        "input": "100-240V",
+        "output": "5V/2A",
+        "color": "화이트"
+      }
+    },
+    {
+      "id": "prod_002",
+      "name": "무선 이어폰",
+      "price": 89000,
+      "category": "전자기기",
+      "stock": 50,
+      "specs": {
+        "battery": "6시간",
+        "bluetooth": "5.0",
+        "color": "블랙"
+      }
+    }
+  ],
+  "orders": [
+    {
+      "id": "order_001",
+      "user_id": "user_001",
+      "created_at": "2024-12-01T14:30:00Z",
+      "status": "completed",
+      "items": [
+        {
+          "product_id": "prod_001",
+          "quantity": 1,
+          "price": 25000
+        }
+      ],
+      "total": 25000,
+      "shipping": {
+        "address": "서울특별시 강남구 테헤란로 123",
+        "postal_code": "06234",
+        "receiver": "김민준",
+        "phone": "010-1234-5678"
+      }
+    }
+  ]
+}
