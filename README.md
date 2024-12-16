@@ -1,113 +1,68 @@
-## User Data
+# API Sample Data Repository
 
-```json
-{
-  "users": [
-    {
-      "id": "usr_001",
-      "name": "John Smith",
-      "email": "john.smith@email.com",
-      "created_at": "2024-11-15T08:30:00Z",
-      "status": "active",
-      "preferences": {
-        "theme": "dark",
-        "notifications": true
-      }
-    },
-    {
-      "id": "usr_002",
-      "name": "Emma Wilson",
-      "email": "emma.w@email.com",
-      "created_at": "2024-11-16T14:20:00Z",
-      "status": "inactive",
-      "preferences": {
-        "theme": "light",
-        "notifications": false
-      }
-    }
-  ]
-}
+A collection of sample JSON data structures and API endpoints for testing and development purposes.
+
+## Overview
+
+This repository contains structured sample data that can be used for:
+
+- Testing API integrations
+- Frontend development
+- Documentation examples
+- Development environment setup
+
+## Data Structure
+
+The repository includes sample data for:
+
+- User profiles
+- Product catalogs
+- Order information
+- API endpoints documentation
+
+## Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/api-sample-data.git
+
+# Navigate to the project directory
+cd api-sample-data
 ```
 
-## Product Data
+## Usage
 
-```json
-{
-  "products": [
-    {
-      "product_id": "prod_001",
-      "name": "Premium Widget",
-      "price": 29.99,
-      "category": "electronics",
-      "inventory": 150,
-      "specifications": {
-        "weight": "250g",
-        "dimensions": "10x5x3cm",
-        "color": "silver"
-      }
-    },
-    {
-      "product_id": "prod_002",
-      "name": "Super Gadget",
-      "price": 49.99,
-      "category": "electronics",
-      "inventory": 75,
-      "specifications": {
-        "weight": "400g",
-        "dimensions": "15x8x5cm",
-        "color": "black"
-      }
-    }
-  ]
-}
-```
+The data is organized in JSON format and can be accessed directly from the respective files:
 
-## Order Data
-
-```json
-{
-  "orders": [
-    {
-      "order_id": "ord_001",
-      "user_id": "usr_001",
-      "order_date": "2024-12-15T10:30:00Z",
-      "status": "completed",
-      "items": [
-        {
-          "product_id": "prod_001",
-          "quantity": 2,
-          "price": 59.98
-        }
-      ],
-      "total": 59.98,
-      "shipping_address": {
-        "street": "123 Main St",
-        "city": "Boston",
-        "country": "USA",
-        "postal_code": "02108"
-      }
-    }
-  ]
-}
-```
+- `users.json` - User profile data
+- `products.json` - Product catalog information
+- `orders.json` - Sample order data
+- `endpoints.yaml` - API endpoint documentation
 
 ## API Endpoints
 
-```yaml
-endpoints:
-  - path: /api/v1/users
-    method: GET
-    description: Get all users
-    response: users[]
-    
-  - path: /api/v1/products
-    method: GET
-    description: Get all products
-    response: products[]
-    
-  - path: /api/v1/orders
-    method: POST
-    description: Create new order
-    request: order
-    response: order_id
-```
+Base URL: `https://api.example.com`
+
+Available endpoints:
+
+- GET /api/v1/users
+- GET /api/v1/products
+- POST /api/v1/orders
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details
+
+## Contact
+
+Your Name - @yourusername
+
+Project Link: https://github.com/yourusername/api-sample-data
