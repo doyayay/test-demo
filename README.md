@@ -1,68 +1,31 @@
-# API Sample Data Repository
+# 샘플 API 데이터 저장소
 
-A collection of sample JSON data structures and API endpoints for testing and development purposes.
+## 소개
+이 저장소는 개발 및 테스트 목적으로 사용할 수 있는 샘플 API 데이터를 제공합니다.
 
-## Overview
+## 데이터 구조
+- `data/users.json`: 사용자 프로필 데이터
+- `data/products.json`: 상품 정보
+- `data/orders.json`: 주문 데이터
 
-This repository contains structured sample data that can be used for:
-
-- Testing API integrations
-- Frontend development
-- Documentation examples
-- Development environment setup
-
-## Data Structure
-
-The repository includes sample data for:
-
-- User profiles
-- Product catalogs
-- Order information
-- API endpoints documentation
-
-## Getting Started
-
+## 사용 방법
+1. 저장소를 클론합니다
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/api-sample-data.git
-
-# Navigate to the project directory
-cd api-sample-data
+git clone https://github.com/yourusername/sample-api-data.git
 ```
 
-## Usage
+2. 데이터 파일을 확인합니다
+```bash
+cd sample-api-data/data
+```
 
-The data is organized in JSON format and can be accessed directly from the respective files:
+## API 엔드포인트
+기본 URL: `https://api.example.com`
 
-- `users.json` - User profile data
-- `products.json` - Product catalog information
-- `orders.json` - Sample order data
-- `endpoints.yaml` - API endpoint documentation
+사용 가능한 엔드포인트:
+- GET /api/v1/users - 사용자 목록 조회
+- GET /api/v1/products - 상품 목록 조회
+- POST /api/v1/orders - 새로운 주문 생성
 
-## API Endpoints
-
-Base URL: `https://api.example.com`
-
-Available endpoints:
-
-- GET /api/v1/users
-- GET /api/v1/products
-- POST /api/v1/orders
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details
-
-## Contact
-
-Your Name - @yourusername
-
-Project Link: https://github.com/yourusername/api-sample-data
+## 라이선스
+MIT License
